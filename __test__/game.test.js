@@ -3,7 +3,7 @@ const fs = require('fs')
 
 describe('App', () => {
   it('Contains the compiled JavaScript', (done) => {
-    fs.readFile('DevOps-Week4-Practical/blob/New-Node.js-Workflow/__test__/game.test.js', 'utf8', (err, data) => {
+    fs.readFile('https://github.com/davidryan316/DevOps-Week4-Practical/blob/New-Node.js-Workflow/__test__/game.test.js', 'utf8', (err, data) => {
       expect(err).toBe(null)
       expect(data).toMatchSnapshot()
       done()
